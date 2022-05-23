@@ -20,3 +20,22 @@ CREATE TABLE app_users (
   foreign key (role_id)
   references user_roles(id)
 );
+
+--Crates user roles
+insert into user_roles (role_name) values ('Member'), ('free_to_Play'), ('Player_Moderator'), ('Admin'), ('Dev');
+
+--creates a new forum user
+insert into app_users (first_name, last_name, email, username, password, role_id)
+values
+    ('Patrick', 'Starfish', 'Underthesea@pineapple.com', 'ThisisPatrick', 'Starfishpass', 2),
+    ('Jack', 'Rosen', 'Blainthepain@aol.com', 'Vaertox', 'Incedus', 5),
+    ('Kris', 'Tran', 'Coolplace@hotmail.com', 'Seiyran', 'Dog1234', 3),
+    ('Mike', 'Hunt', 'Dontreadme@places.com', 'Gucci', 'Cat4321', 2),
+    ('Jenna', 'Tools', 'Whyyou@dothis.com', 'Hehehehe', 'dogsncats', 1),
+    ('Haywood', 'Jahblowme', 'Sketchy@perhaps.com', 'Sounder', 'Blaster', 2),
+    ('Zezima', 'Whodat', 'Srslyspam@aol.com', 'Zezima', 'abc1234', 4);
+
+
+
+
+
