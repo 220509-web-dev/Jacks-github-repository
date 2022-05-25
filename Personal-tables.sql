@@ -36,6 +36,3 @@ values
     ('Zezima', 'Whodat', 'Srslyspam@aol.com', 'Zezima', 'abc1234', 4);
 
 
-
-
-
