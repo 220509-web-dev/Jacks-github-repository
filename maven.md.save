@@ -1,0 +1,48 @@
+# Maven
+-wise woman
+-Java build and **dependcy management tool
+  -dependency
+   -molst applicaitons will use code written by other developers
+   -how do you incorporate thoes outside dependencies/code into your program
+	-old school: do it manually by downloading JAR files and addit it
+	to your classpath for execution
+		-this is terrible,tedious, and error prone
+	-dependency manager
+	-will automate the entire process for us
+-skyrim => Nexus mods
+-java app =>maven
+-dependency managers for other languages
+ -java:
+  -maven
+  -gradle
+  -Ant
+ -Javascript
+  -npm
+  -yarn
+ -Rust
+  -cargo
+ -Ruby
+  -gem
+ -Python
+  -pip
+  -poetry
+
+
+##Maven Project STructure
+-***pm.xlm***
+  -project Object model
+  -THe main configuration file for any maven project
+   -dependencies
+   -author
+   -licensing info
+   -verison number
+   -build steps
+   -etc...
+
+-src
+ -main
+  -java(where you write the java code for your app)
+  -resource (any files that your pgoram needs to run that are NOT java files)
+ -test
+  -java(where you write test code for your app)
+
