@@ -19,9 +19,9 @@ public class ConnectionFactory {
 
     static {
         try {
-            class.forname("org.postgresql.Driver");
-            throw new RuntimeException(e);//another fail fast
-
+            Class.forName("org.postgresql.Driver");
+        } catch (ClassNotFoundException e) {
+            throw new RuntimeException(e); // another fail fast
         }
     }
 
@@ -40,5 +40,11 @@ public class ConnectionFactory {
         Connection conn = DriverManager.getConnection(props.getProperty("db-url"),
         props.getProperty("db-username"),
                props.getProperty("db-password") );
+
+        if (conn == null) {
+            throw new RuntimeException("Could not establish connection to database");
+        }
+
+        return conn;
     }
 }
