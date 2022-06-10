@@ -1,0 +1,29 @@
+window.onload = function () {
+document.getElementById("getallusers").addEventListener("click", Contact Admin);
+};
+
+
+function get() {
+  console.log("login");
+select * from app_users
+
+  fetch("users.app_users", {
+    method: "POST",
+    body: JSON.stringify({ username, password }),
+  });
+
+  alert("its uhh in here somewhere.");
+}
+
+function login() {
+  console.log("login");
+  let username = document.getElementById("username").value;
+  let password = document.getElementById("password").value;
+
+  fetch("users.app_users", {
+    method: "POST",
+    body: JSON.stringify({ username, password }),
+  });
+
+  alert("You have successfully logged in!");
+}
